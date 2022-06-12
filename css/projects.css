@@ -1,0 +1,68 @@
+.card, .card-item-container, .card-img-container {
+  border-radius: 20px;
+}
+
+.card {
+  width: 90%;
+}
+
+.card-item-container {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-container {
+  border: 1px solid #06283D;
+  padding: 2px;
+}
+
+.card-img, .carousel-inner {
+  border-radius: 16px;
+  transition: all 0.8s ease-in-out;
+}
+
+.card-img-container:hover .card-img {
+  transform: scale(1.1);
+  transform: rotate(-15deg);
+}
+
+.card-img-container:hover .carousel-inner {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.youtube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.fa-youtube-square {
+  font-size: 35px;
+  color: #06283D;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-youtube-square:hover {
+  font-size: 30px;
+  color: #47B5FF;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  .card, .card-item-container, .card-img-container, .card-img, .carousel-inner {
+    border-radius: 5px;
+  }
+}
