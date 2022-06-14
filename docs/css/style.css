@@ -33,7 +33,7 @@ p span {
 
 /* Loader */
 .loader-container { 
-  position: absolute;
+  position: fixed;
   top: 40vh; right: 30vw;
   width: 6.250em; height: 6.250em;
   animation: rotate 2.4s linear infinite;
@@ -49,7 +49,7 @@ p span {
 }
 
 .dot {
-  position: absolute;
+  position: fixed;
   margin: auto;
   width: 2.4em; height: 2.4em;
   border-radius: 100%;
