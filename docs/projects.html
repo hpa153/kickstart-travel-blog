@@ -13,8 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/projects.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
   <link rel="icon" href="./img/profile.jpg">
   <title>Phuong Anh Hoang</title>
 </head>
@@ -36,15 +35,15 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active menu" aria-current="page" href="index.html">
-              <i class="fa-solid fa-house-chimney menu-icon"></i>
-              <span class="menu-text">Home</span>
+            <a class="nav-link active menu" aria-current="page" href="#">
+              <i class="fa-solid fa-house-chimney menu-icon current"></i>
+              <span class="menu-text current">Home</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active menu" aria-current="page" href="#">
-              <i class="fa-solid fa-plane-departure menu-icon current"></i>
-              <span class="menu-text current">Trips</span>
+            <a class="nav-link active menu" aria-current="page" href="projects.html">
+              <i class="fa-solid fa-plane-departure menu-icon"></i>
+              <span class="menu-text">Trips</span>
             </a>
           </li>
           <li class="nav-item">
@@ -70,9 +69,9 @@
               <img src="./img/profile.jpg" alt="profile" class="profile">
             </a>
           </div>
-          <p class="quote">‚ÄúDo not follow where the path may lead. Go instead where there is no path and leave a trail‚Äù
+          <p class="quote">ìDo not follow where the path may lead. Go instead where there is no path and leave a trailî
             <br />
-            <span>‚Äì Ralph Waldo Emerson</span>
+            <span>ñ Ralph Waldo Emerson</span>
           </p>
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
@@ -87,8 +86,7 @@
           </button>
         </div>
       </div>
-      <div class="col-md-9 col-sm-12 right-side">
-        <h1 class="title">More about our trips</h1>
+      <div class="col-md-9 col-sm-12 right-side"><h1 class="title">More about our trips</h1>
         <!-- 1st item -->
         <div class="card mb-3 transparent">
           <div class="row g-0">
@@ -222,7 +220,7 @@
                 <h5 class="card-title">South Korea: An unexpected charm of Seoul</h5>
                 <p class="card-text">Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers,
                   high-tech subways and pop culture meet Buddhist temples, palaces and street markets. Seoul is a
-                  vibrant, enchanting city with two main palaces ‚Äì Gyeongbokgung and Changgyeon.</p>
+                  vibrant, enchanting city with two main palaces ñ Gyeongbokgung and Changgyeon.</p>
                 <div class="youtube-container">
                   <a href="https://youtu.be/OFuNOYXcvm8" target="_blank" title="Watch our video" class="card-text">
                     <i class="fa-brands fa-youtube-square"></i>
@@ -309,7 +307,15 @@
       </div>
     </div>
   </div>
-  <figure class="loader-container">
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      $(document).ready(function () {
+        $('.carousel').carousel({
+          interval: 3000
+        })
+      })
+    });
+  </script><figure class="loader-container">
     <div class="loader">
       <div class="dot white"></div>
       <div class="dot"></div>
@@ -323,15 +329,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="./js/general.js"></script>
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-      $(document).ready(function () {
-        $('.carousel').carousel({
-          interval: 3000
-        })
-      })
-    });
-  </script>
 </body>
 
 </html>
