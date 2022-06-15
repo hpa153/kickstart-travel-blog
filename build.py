@@ -10,7 +10,6 @@ bottomContent = open('./templates/bottom.html', encoding="utf8").read()
 directory_path = "./content"
 # and write
 file_path = "./docs"
-index = 0
 
 for file in os.listdir(directory_path):
   # Get content of content file
@@ -21,5 +20,3 @@ for file in os.listdir(directory_path):
   # Create new file
   newFile = os.path.join(file_path, file)
   open(newFile, "w").write(writing_content)
-
-  index += 1
