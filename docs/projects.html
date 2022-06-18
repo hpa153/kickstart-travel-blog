@@ -12,10 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap"
     rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="icon" href="./img/profile.jpg">
-  <title>Phuong Anh Hoang</title>
+  <title>Projects</title>
 </head>
 
 <body>
@@ -36,20 +39,20 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active menu" aria-current="page" href="index.html">
-              <i class="fa-solid fa-house-chimney menu-icon current"></i>
-              <span class="menu-text current">Home</span>
+              <i class="fa-solid fa-house-chimney menu-icon current--home"></i>
+              <span class="menu-text current--home">Home</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active menu" aria-current="page" href="projects.html">
-              <i class="fa-solid fa-plane-departure menu-icon"></i>
-              <span class="menu-text">Trips</span>
+              <i class="fa-solid fa-plane-departure menu-icon current"></i>
+              <span class="menu-text current">Trips</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active menu" aria-current="page" href="contact.html">
-              <i class="fa-solid fa-address-book menu-icon"></i>
-              <span class="menu-text">Contact</span>
+              <i class="fa-solid fa-address-book menu-icon current--contact"></i>
+              <span class="menu-text current--contact">Contact</span>
             </a>
           </li>
         </ul>
@@ -69,9 +72,9 @@
               <img src="./img/profile.jpg" alt="profile" class="profile">
             </a>
           </div>
-          <p class="quote">“Do not follow where the path may lead. Go instead where there is no path and leave a trail”
+          <p class="quote">"Do not follow where the path may lead. Go instead where there is no path and leave a trail"
             <br />
-            <span>– Ralph Waldo Emerson</span>
+            <span>- Ralph Waldo Emerson</span>
           </p>
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
@@ -86,7 +89,8 @@
           </button>
         </div>
       </div>
-      <div class="col-md-9 col-sm-12 right-side"><h1 class="title">More about our trips</h1>
+      <div class="col-md-9 col-sm-12 right-side">
+        <h1 class="title">More about our trips</h1>
         <!-- 1st item -->
         <div class="card mb-3 transparent">
           <div class="row g-0">
@@ -220,7 +224,7 @@
                 <h5 class="card-title">South Korea: An unexpected charm of Seoul</h5>
                 <p class="card-text">Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers,
                   high-tech subways and pop culture meet Buddhist temples, palaces and street markets. Seoul is a
-                  vibrant, enchanting city with two main palaces – Gyeongbokgung and Changgyeon.</p>
+                  vibrant, enchanting city with two main palaces â€“ Gyeongbokgung and Changgyeon.</p>
                 <div class="youtube-container">
                   <a href="https://youtu.be/OFuNOYXcvm8" target="_blank" title="Watch our video" class="card-text">
                     <i class="fa-brands fa-youtube-square"></i>
@@ -315,20 +319,22 @@
         })
       })
     });
-  </script><figure class="loader-container">
-    <div class="loader">
-      <div class="dot white"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-  </figure>
+  </script>
+        <figure class="loader-container">
+          <div class="loader">
+            <div class="dot white"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </figure>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="./js/general.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/general.js"></script>
 </body>
 
 </html>
