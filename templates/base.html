@@ -15,7 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/trips.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="icon" href="./img/profile.jpg">
   <title>{{title}}</title>
@@ -37,24 +37,14 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
+          {% for nav_item in nav_items %}
           <li class="nav-item">
-            <a class="nav-link active menu" aria-current="page" href="index.html">
-              <i class="fa-solid fa-house-chimney menu-icon current--home"></i>
-              <span class="menu-text current--home">Home</span>
+            <a class="nav-link active menu" aria-current="page" href="{{nav_item.path}}">
+              <i class="{{nav_item.class}}"></i>
+              <span class="{{nav_item.span_class}}">{{nav_item.name}}</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active menu" aria-current="page" href="projects.html">
-              <i class="fa-solid fa-plane-departure menu-icon current--projects"></i>
-              <span class="menu-text current--projects">Trips</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active menu" aria-current="page" href="contact.html">
-              <i class="fa-solid fa-address-book menu-icon current--contact"></i>
-              <span class="menu-text current--contact">Contact</span>
-            </a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
